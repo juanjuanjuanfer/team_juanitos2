@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "./prueba.h"
+#include "./printarray.h"
 
 
 int main()
@@ -11,7 +11,7 @@ int main()
     printf("TYPE YOUR NUMBER: \n");
     scanf("%d", &num);
 
-    int finded = search(arr, len, num);
+    /*int finded = search(arr, len, num);
     if (finded == -1){
         printf("THE NUMBER IS NOT IN THE ARRAY \n");
     }
@@ -21,9 +21,12 @@ int main()
     printf("--ARRAY SORTER-- \n");
     sort(arr, len);
     printf("\n");
+    */
     printf("--ORIGINAL ARRAY-- \n");
-    printArray(arr, len);
-
+    printf("{ ");
+    ImprimeMatriz(arr, len);
+    printf("}");
     
     return 0;
 }
+
